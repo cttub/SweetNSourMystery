@@ -18,16 +18,24 @@
   <li><a href="buyNow.html">Buy Now</a></li>
 </ul>
 
+<a href = #aboutSweet><img src = "Assets/graphics/sweetNMew.png" alt="sweetNMew" class = "sweetNMew"></a>
+<a href = #aboutSour><img src = "Assets/graphics/sourNSnorlax.png" alt="sourNSnorlax" class = "sourNSnorlax"></a>
+
+
+
 <CENTER>
-<img src = "Assets/graphics/aboutSweetNSour.png" alt="aboutSweetNSour" class = "aboutSweetNSour" >
-<img src = "Assets/graphics/aboutSweet.png" alt="aboutSweet" class = "aboutSweet" >
+<img src = "Assets/graphics/about.png" alt="aboutSweetNSour" class = "aboutSweetNSour" >
+<img src = "Assets/graphics/aboutSweet.png" alt="aboutSweet" id = "aboutSweet">
+<img src = "Assets/graphics/aboutSour.png" alt="aboutSour" id = "aboutSour" >
 </CENTER>
 
 
 
 <style>
 
-
+html{
+	scroll-behavior: smooth;
+}
 body{
 	margin: 0;
 	background-image: url("Assets/background.png");
@@ -104,12 +112,44 @@ li a:hover:not(.active){
 	
 }
 
-.aboutSweet{
+#aboutSweet{
 	position: relative;
 	display: inline-block;
 	margin:  70px;
 	width: 90%;
 	height: auto;
+
+}
+
+#aboutSour{
+	position: relative;
+	display: inline-block;
+	margin:  70px;
+	width: 90%;
+	height: auto;
+
+}
+
+.sweetNMew{
+	position: absolute;
+	display: inline-block;
+	margin:  70px;
+	width: 35%;
+	height: auto;
+	z-index: 1;
+	top: 15%;
+	left: 1%;
+}
+
+.sourNSnorlax{
+	position: absolute;
+	display: inline-block;
+	margin:  70px;
+	width: 35%;
+	height: auto;
+	z-index: 1;
+	top: 15%;
+	left: 55%;
 }
 </style>
 
